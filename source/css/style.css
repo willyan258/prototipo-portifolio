@@ -7,76 +7,133 @@
 .main-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
-    height: 100vh;
+    grid-template-rows: 10vh 10fr 1fr;
+    height: 300vh;
     width: 100vw;
-    background-color: #ccc;
     font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    
 }
 
 .cabecalho{
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    background-color: aqua;
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    width: 100%;
+    position: fixed;
     align-items: center;
+    background-color: #16161d;    
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+
+} 
+
 .cabecalho a{
-    padding: 0 15px;
-    
+    color:#fff;
+    text-decoration: none;
 }
 
 .main-content{
     grid-column: 1/4;
     grid-row: 2/3;
+    background-image: url('../img/imagem2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.projetos a{
+    text-decoration: none;
+    color:#fff
+}
+
+.img-cards{
+    width: 350px;
+    height: 300px;
+    background-image: url('../img/contas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-cards:hover{
+    transition: 0.2s;
+    animation: myAnim 2s ease-in-out 3s 1 alternate;
+    box-shadow: #ccc;
+    width: 380px;
+    height: 340px;
+}
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+.cards{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 130px;
 }
-
 .card1{
-    background-color: bisque;
+    background-color: #16161d;
     height: 500px;
     width: 400px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
 
 .card2{
-    background-color: blue;
+    background-color: #16161d;
     height: 500px;
     width: 400px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
 
 
 .card3{
-    background-color: blueviolet;
+    background-color: #16161d;
     height: 500px;
     width: 400px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
 .footer{
-    background-color: cadetblue;
+    background-color: #16161d;
     grid-column: 1/4;
     grid-row: 3/4;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    
 }
 
 .footer a{
     text-decoration: none;
     padding: 0 15px;
+    color: #fff;
 }
 
