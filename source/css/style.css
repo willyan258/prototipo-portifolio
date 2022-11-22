@@ -7,12 +7,17 @@
 .main-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 10fr 1fr;
+    grid-template-rows: 10vh 90vh 100vh 90vh 10vh;
     height: 300vh;
-    width: 100vw;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     color:#fff;
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url('../img/imagem2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .cabecalho{
@@ -38,13 +43,11 @@ nav {
     text-decoration: none;
 }
 
+
 .main-content{
     grid-column: 1/4;
     grid-row: 2/3;
-    background-image: url('../img/imagem2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-
+    width: 100vw;
 }
 
 .projetos a{
@@ -83,9 +86,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 130px;
+    margin-top: 300px;
+    flex-wrap: wrap;
 }
-.card1{
+.card-interno{
     background-color: #16161d;
     height: 500px;
     width: 400px;
@@ -96,39 +100,66 @@ nav {
     border-radius: 10px;
 }
 
-
-.card2{
-    background-color: #16161d;
-    height: 500px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 10px;
+.card-interno a{
+   text-decoration: none;
+   color: #fff;
 }
 
-
-
-.card3{
-    background-color: #16161d;
-    height: 500px;
-    width: 400px;
+.sobre{
+    height: 90vh;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 10px;
+    flex-wrap: wrap;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    flex-direction: column;
+    
+}
+.contato{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    grid-column: 4/5;
+    flex-direction: column;
+    
+}
+
+.text-sobre{
+    
+    width: 100%;
+}
+
+.text-sobre pre{
+   font-size: larger;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.title-sobre{
+    padding: 10px 45%;
+    background-color: #16161d;
+    
+}
+
+.img-sobre{
+    height: 250px;
+    width: 250px;
 }
 
 .footer{
     background-color: #16161d;
     grid-column: 1/4;
-    grid-row: 3/4;
+    grid-row:5/6;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    align-self: flex-end;
+    height: 10vh;
+    width: 100%;
 }
 
 .footer a{
