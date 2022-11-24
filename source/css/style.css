@@ -107,30 +107,29 @@ nav {
 
 .sobre{
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     grid-row: 3/4;
     grid-column: 1/4;
     flex-direction: column;
-    
+    text-align: center;
 }
 .contato{
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     grid-column: 4/5;
-    flex-direction: column;
+    flex-direction: row;
     
 }
 
 .text-sobre{
-    
     width: 100%;
 }
 
@@ -143,6 +142,12 @@ nav {
     padding: 10px 45%;
     background-color: #16161d;
     
+}
+
+.title-sobre2{
+    padding: 10px 45%;
+    background-color: #16161d;
+    width: 100%;
 }
 
 .img-sobre{
@@ -164,7 +169,7 @@ nav {
 
 .footer a{
     text-decoration: none;
-    padding: 0 15px;
+    padding: 0 25px;
     color: #fff;
 }
 
